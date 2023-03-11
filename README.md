@@ -75,7 +75,7 @@ all variants have an optional last argument action (type string) that when speci
 
 > takes no arguments, used to show that a feature is incomplete, or will be added in its place later, uses `./assets/unimplemented-icon`
 
-## Popup
+## Popups
 
 ---
 
