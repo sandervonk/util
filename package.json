@@ -1,0 +1,37 @@
+{
+  "name": "util",
+  "version": "1.0.0",
+  "description": "Toasts, Popups, and more!",
+  "keywords": [
+    "toast",
+    "popup",
+    "util"
+  ],
+  "homepage": "https://github.com/sandervonk/util",
+  "bugs": {
+    "url": "https://github.com/sandervonk/util/issues",
+    "email": "npm@svonk.me"
+  },
+  "main": "util.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandervonk/util.git"
+  },
+  "author": "Sander Vonk <npm@svonk.me> (svonk.me)",
+  "license": "CC BY-NC-SA",
+  "private": false,
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

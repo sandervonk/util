@@ -156,9 +156,9 @@ function cleanError(error) {
       return error.message.replace("Error ", "");
   }
 }
+// expose functions
 window.removePopup = removePopup;
-// expose functions to global scope
-export {
+module.exports = {
   removePopup,
   Popup,
   Toast,
