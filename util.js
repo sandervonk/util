@@ -158,7 +158,7 @@ function cleanError(error) {
 }
 // expose functions
 window.removePopup = removePopup;
-module.exports = {
+export {
   removePopup,
   Popup,
   Toast,
