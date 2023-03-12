@@ -155,6 +155,8 @@ function cleanError(error) {
       return "Operation not allowed";
     case "auth/too-many-requests":
       return "Too many requests";
+    case "auth/popup-closed-by-user":
+      return "Popup closed by user";
     default:
       return error.message.replace("Error ", "");
   }

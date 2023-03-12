@@ -1,6 +1,6 @@
 {
   "name": "@svonk/util",
-  "version": "0.1.6",
+  "version": "1.0.2",
   "description": "Toasts, Popups, and more!",
   "keywords": [
     "toast",
@@ -14,8 +14,6 @@
   },
   "main": "util.js",
   "scripts": {
-    "postinstall": "cp -R ./assets/. ../assets/toast",
-    "preuninstall": "rm -rf ../assets/toast",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,5 +33,16 @@
     "eslint": "^5.6.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.14.0"
+  },
+  "files": [
+    "assets/**/*",
+    "util.css",
+    "theme.css"
+  ],
+  "exports": {
+    ".": "./util.js",
+    "./util.css": "./util.css",
+    "./theme.css": "./theme.css",
+    "./assets/": "./assets/"
   }
 }
