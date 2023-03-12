@@ -157,6 +157,12 @@ function cleanError(error) {
       return "Too many requests";
     case "auth/popup-closed-by-user":
       return "Popup closed by user";
+    case "auth/popup-blocked":
+      return "Popup blocked";
+    case "auth/unauthorized-domain":
+      return "Can't login from this domain";
+    case "auth/cancelled-popup-request":
+      return "New popup opened, cancelling previous request";
     default:
       return error.message.replace("Error ", "");
   }
