@@ -1,6 +1,24 @@
 # **[@svonk/util](https://www.npmjs.com/package/@svonk/util)**
 
-My in-progress Toast, Popup, etc NPM Package!
+> Easy-to-use Toasts, Popups, and more common utilities for my projects
+
+## Installation
+
+---
+
+Install to your project with:
+
+`npm i @svonk/util@latest`
+
+## Usage
+
+---
+
+In your main javascript file, import with:
+
+`import {`parts`} from "@svonk/util"`
+
+see below for more info on how to use these parts!
 
 ## Toasts
 

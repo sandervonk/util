@@ -1,19 +1,21 @@
 {
   "name": "@svonk/util",
-  "version": "0.0.2",
+  "version": "0.1.6",
   "description": "Toasts, Popups, and more!",
   "keywords": [
     "toast",
     "popup",
     "util"
   ],
-  "homepage": "https://github.com/sandervonk/util",
+  "homepage": "code.svonk.me/util",
   "bugs": {
     "url": "https://github.com/sandervonk/util/issues",
     "email": "npm@svonk.me"
   },
   "main": "util.js",
   "scripts": {
+    "postinstall": "cp -R ./assets/. ../assets/toast",
+    "preuninstall": "rm -rf ../assets/toast",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

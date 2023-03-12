@@ -1,3 +1,6 @@
+// Q: how do i import all files from ./assets into the project's ./assets/toast folder when installed?
+// A:
+
 // rewite the above into the new syntax
 import $ from "jquery";
 import "./util.css";
