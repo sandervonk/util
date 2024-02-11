@@ -159,6 +159,8 @@ function cleanError(error) {
       return "Popup closed by user";
     case "auth/popup-blocked":
       return "Popup blocked";
+    case "auth/user-cancelled":
+      return "Action cancelled by user";
     case "auth/unauthorized-domain":
       return "Can't login from this domain";
     case "auth/cancelled-popup-request":
