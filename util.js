@@ -18,7 +18,7 @@ class Toast {
     this.showToast();
   }
   showToast() {
-    $(".toast").remove();
+    $(".toast:not(.noremove)").remove();
     let overlay = document.createElement("div"),
       toast = document.createElement("div");
     toast.classList.add("toast");
@@ -77,7 +77,7 @@ class Popup {
     this.showPopup();
   }
   showPopup() {
-    $(".popup, .popup-overlay").remove();
+    $(".popup:not(.noremove), .popup-overlay:not(.noremove)").remove();
     let overlay = $("<div></div>", { class: "popup-overlay " + this.type }),
       toast = $("<div></div>", { class: "popup" }),
       buttons = $("<div></div>", { id: "popup-buttons" });
@@ -116,8 +116,8 @@ function removePopup() {
   $(".popup").css({ animation: "popupout 0.25s forwards" });
   $(".popup-overlay").css({ animation: "fadeout 0.5s forwards" });
   setTimeout(() => {
-    $(".popup").remove();
-    $(".popup-overlay").remove();
+    $(".popup:not(.noremove)").remove();
+    $(".popup-overlay:not(.noremove)").remove();
   }, 500);
 }
 $(document.body).on("click", ".popup-overlay", function () {
